@@ -1,0 +1,79 @@
+Robert Truesdale
+RLTGPK 14290371
+Assignment 3: Requirements Analysis
+
+
+Need: A method for easily submitting and collecting programming assignments.
+Purpose: To create a system which allows students in programming classes to submit programming work. 
+Additionally, the TAs must be able to collect assignments. Finally, the instructors need to be capable of managing the course,
+its sections, TAs, and assignments. Client Base: CS Department – faculty, staff, and students
+
+Step 1
+  Identify the different types of Users of the software system
+    
+    -Professors
+    -Students
+    -TA's
+
+Step 2
+  For each identified User, identify the Activities they will perform with the software. (These are User Requirements.)
+    
+    -Professors
+        -ability to create new assignments with due dates and rubric (if desired)
+        -ability to either close the submission after the due date or leave it open and flag late
+        -ability to edit assignments and their due date
+        -ability to post grades of given assignments
+        -ability to create different classes/sections
+        -ability to "create" TAs, and choose whether they can grade assignments and submit the grades with or without the professor's approval
+     -Students
+        -ability to submit/re-submit assignments
+        -ability to view grades of said assignments and rubric
+      -TAs
+         -ability to view and grade assignments
+         -ability to submit grades to the system/submit assignments for final review by professor 
+      
+Step 3
+  For each identified Activity, identify…
+  relevant data within the system. Data entities and attributes may be simply listed or you may construct a data model if it helps.
+  constraints (non-functional) on the activity or the resultant state of the system
+
+  -ability to either close the submission after the due date or leave it open and flag late
+      -will need a database to hold all the submissions with their name, date, student name, grade weight, and whether                  turned in on time or late, that way the submission can be closed if desired and everything is turned in correctly
+        
+  -ability to edit assignments and their due date
+      -software needs to be able to access the assignment and edit it on the fly and save it when finished editing
+  
+  -ability to post grades of given assignments
+      -every assignment needs the attributes of grade, student, grade weight, and date turned in so everything is connected 
+  
+  -ability to create different classes/sections
+      -Professor entities need the attributes of classes/sections with the ability to add more, and the classes/section(s)            need to hold the assignments, students, and TAs
+      
+  -ability to "create" TAs, and choose whether they can grade assignments and submit the grades with or without the              professor's approval
+      -professors need ability to create more TAs to add into a database, as well as managing their priveleges 
+  
+  -ability to submit/re-submit assignments
+      -Students need to be able to upload assignments to the correct spot in the database where the submission is correctly           entered into the the given assignment where it can be updated if needed
+      
+  -ability to view grades of said assignments and rubric
+      -webpage to view all given assignments with the grades and a link to rubric (if available)
+      
+  -ability to view and grade assignments
+      -TAs with permission should be able to view and grade assignments as well as the professor. permissions such as sign in         needed for security
+      
+  -ability to submit grades to the system/submit assignments for final review by professor
+      -after assignment is reviewed by TA, should be able to submit the grades to the database or submit them to the professor         for final review. after review professor should be able to upload all final grades for the given assignment
+     
+     
+Step 4
+  Identify System constraints and requirements
+  i.e. hardware and necessary components
+    
+    -computer or laptop
+    -need an internet connection with a browser
+    -need proper security and accounts for each student, TA, and professor
+    -software needs a proper front-end, back-end, and database
+    -needs an administrator for proper maintenance and stability
+    -need of storage to be able to download submitted assignments for review
+    
+
