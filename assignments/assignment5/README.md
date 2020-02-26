@@ -3,16 +3,16 @@
 ## Results
 
 after completion my test results are:
-1 - p
-2 - p
-3 - p
-4 - f
-5 - f
-6 - p
-7 - f
-8 - f
-9 - f
-10 - p
+- 1 - p
+- 2 - p
+- 3 - p
+- 4 - f
+- 5 - f
+- 6 - p
+- 7 - f
+- 8 - f
+- 9 - f
+- 10 - p
 
 [Setup your python virtual environment first.](./venv.md)
 
