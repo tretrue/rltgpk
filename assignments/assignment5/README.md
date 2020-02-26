@@ -1,5 +1,19 @@
 # Assignment 5: Software-Engineering-Testing
 
+##Results
+
+after completion my test results are:
+1 - p
+2 - p
+3 - p
+4 - f
+5 - f
+6 - p
+7 - f
+8 - f
+9 - f
+10 - p
+
 [Setup your python virtual environment first.](./venv.md)
 
 For this assignment you will be tasked with testing the grading system. This system was designed to be a simple version 
