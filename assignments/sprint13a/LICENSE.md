@@ -1,0 +1,1 @@
+if I were to choose a license to use, it would have to be BEERWARE, because I think the idea of some random person finding you, the creator, and buying you a beer would be very pleasant, and the most rewarding thing. 
