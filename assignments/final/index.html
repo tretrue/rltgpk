@@ -1,0 +1,44 @@
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<meta name="google-signin-client_id" content="943721748628-k9pligisrj1dv9unj18o3k3jlb6u74so.apps.googleusercontent.com">
+
+<script>
+    
+    
+    function onSignIn(googleUser) {
+        var profile = googleUser.getBasicProfile();
+        var id = profile.getId(); 
+        var name = profile.getName();
+        var image = profile.getImageUrl();
+        var email = profile.getEmail(); 
+        var gname = profile.getGivenName();
+        var fname = profile.getFamilyName();
+        var x = document.getElementById("img");
+        x.setAttribute("src", image);
+        
+        var info = document.getElementById("info");
+        info.innerHTML = '<div>Welcome, <b>' + name + '</b>!, Your id is <b>'+id+'</b>, and your email is <b>'+email+'</b>. If available, your family name is <b>'+ fname +'</b> and your given name is <b>'+gname+'</b>!</div>';
+        document.getElementsByClassName("asi").style.visibility = "visible";
+        document.getElementsByClassName("b4si").style.visibility = "hidden";
+    }
+    
+    function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function () {
+          console.log('User signed out.');
+        });
+        document.getElementsByClassName("asi").style.visibility = "hidden";
+        document.getElementsByClassName("b4si").style.visibility = "visible";
+    }
+
+
+</script>
+<body>
+<div class="b4si">
+   <h1>Welcome, Please sign in to view your profile:</h1>
+</div>
+<div class="g-signin2" data-onsuccess="onSignIn" class="b4si"></div>
+<img id = "img" class="asi">
+<div class="asi" id="info">  </div>
+
+<a href="http://ec2-3-12-198-229.us-east-2.compute.amazonaws.com/" class="asi" onclick="signOut();">Sign out</a>
+</body>
